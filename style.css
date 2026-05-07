@@ -24,10 +24,40 @@ h1, h2{
     color:#DB2777;
 }
 
-.banner{
-    background-color: #FCE5EA;
-    padding: 50px;
+h3{
+    color: #ffffff;
+text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5); /* Sombra sutil para separar o texto do fundo */
+font-size: xx-large;
 }
+
+.banner {
+    /* Mantém a textura visível, mas coloca uma camada escura por cima */
+    background-color: rgba(0, 0, 0, 0.6);
+   
+    
+    
+}
+
+.banner{
+    /* background-color: #FCE5EA;
+    padding: 50px; */
+   
+  --s: 60px;
+  --c1: #f2b4a8;
+  --c2: #91204d;
+  
+  --_g: radial-gradient(25% 25% at 25% 25%,var(--c1) 99%,#0000 101%);
+
+  /* Adicionamos um gradient linear de preto transparente como primeira camada */
+  background:
+    linear-gradient(rgba(101, 100, 100, 0.6),rgba(101, 100, 100, 0.6)), 
+    var(--_g) var(--s) var(--s)/calc(2*var(--s)) calc(2*var(--s)),
+    var(--_g) 0 0/calc(2*var(--s)) calc(2*var(--s)),
+    radial-gradient(50% 50%,var(--c2) 98%,#0000) 0 0/var(--s) var(--s),
+    repeating-conic-gradient(var(--c2) 0 25%,var(--c1) 0 50%) 
+      calc(.5*var(--s)) 0/calc(2*var(--s)) var(--s);
+}
+
 
 nav{
     display: flex;
