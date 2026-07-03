@@ -2,6 +2,11 @@ html, body{
     height: 100%;
 }
 
+html {
+    scroll-behavior: smooth; /* Deixa o clique com uma rolagem suave */
+    scroll-padding-top: 80px; /* Altere 80px para a altura real do seu menu fixo */
+}
+
 body{
     margin: 0;
     display: flex;
@@ -33,15 +38,19 @@ font-size: xx-large;
 .banner {
     /* Mantém a textura visível, mas coloca uma camada escura por cima */
     background-color: rgba(0, 0, 0, 0.6);
-   
-    
-    
 }
 
 .banner{
-    /* background-color: #FCE5EA;
-    padding: 50px; */
-   
+    /* Ocupa 60% da altura da tela do usuário */
+    min-height: 30vh; 
+
+    /* Centraliza o texto e o botão verticalmente */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+
   --s: 60px;
   --c1: #f2b4a8;
   --c2: #91204d;
@@ -55,9 +64,8 @@ font-size: xx-large;
     var(--_g) 0 0/calc(2*var(--s)) calc(2*var(--s)),
     radial-gradient(50% 50%,var(--c2) 98%,#0000) 0 0/var(--s) var(--s),
     repeating-conic-gradient(var(--c2) 0 25%,var(--c1) 0 50%) 
-      calc(.5*var(--s)) 0/calc(2*var(--s)) var(--s);
+    calc(.5*var(--s)) 0/calc(2*var(--s)) var(--s);
 }
-
 
 nav{
     display: flex;
@@ -87,11 +95,13 @@ a{
     padding: 10px;
     margin: 10px;
     text-align: center;
+    margin-top: 40px;
 }
 
 #produtos{
     display: flex;
     flex-direction: column;
+    scroll-margin-top: 100px; /* Ajuste para a altura do seu menu fixo não cobrir o titulo ao rolar a tela pelos atalhos */
 }
 
 .card{
@@ -149,6 +159,7 @@ footer{
     footer{
         text-align: center;
     }
+
 }
 
 @media screen and (min-width: 518px){
