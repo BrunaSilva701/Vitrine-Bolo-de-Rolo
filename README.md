@@ -22,4 +22,4 @@ Site que permite aos clientes visualizar uma vitrine de produtos, assim como o v
 - CSS
 - Javasript
 
-[![Link do site](https://img.shields.io/badge/Link%20do%20Site%20%20-DB2777?style=for-the-badge)](https://brunasilva701.github.io/Digitalizando_o_Comercio_Local/)
+[![Link do site](https://img.shields.io/badge/Link%20do%20Site%20%20-DB2777?style=for-the-badge)](https://brunasilva701.github.io/Vitrine-Bolo-de-Rolo/)
