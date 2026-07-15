@@ -101,7 +101,7 @@ a{
 #produtos{
     display: flex;
     flex-direction: column;
-    scroll-margin-top: 100px; /* Ajuste para a altura do seu menu fixo não cobrir o titulo ao rolar a tela pelos atalhos */
+    scroll-margin-top: 100px; /* Ajuste para a altura do menu fixo não cobrir o titulo da seção ao rolar a tela pelos atalhos */
 }
 
 .card{
